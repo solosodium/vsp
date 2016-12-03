@@ -1,0 +1,8 @@
+{
+  "name": "vsp",
+  "version": "0.0.1",
+  "description": "vector, state, product",
+  "dependencies": {
+    "ajv": "^4.9.0"
+  }
+}
