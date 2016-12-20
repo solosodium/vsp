@@ -122,7 +122,7 @@ module.exports = function () {
 
         /**
          * Get rule options
-         * @returns {{}}
+         * @returns {{*}}
          */
         getRuleOptions: function () {
             return ruleOptions;
