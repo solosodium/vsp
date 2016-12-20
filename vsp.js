@@ -1,13 +1,14 @@
 /**
- * Name: vsp (vector, state, product)
+ * Name: vsp.js (vector, state, product)
  * Author: Hao Fu
- * Date: 11/23/2016
+ * Created date: 11/23/2016
+ * Updated date: 12/20/2016
  * Description: This module maintains an internal STATE and a list of RULES.
  * Once the state is initialized and rules are defined, it accepts incoming
- * VECTORS that match the definition of the rules, and update the state with
- * both vectors and rules. During the update, the process also generates
- * something called PRODUCT, as a result of the update given how the rules
- * are configured. RULE and VECTOR have one-to-one correspondence.
+ * VECTORS (events) that match the definition of the rules, and update the
+ * state with both vectors and rules. During the update, the process also
+ * generates PRODUCT (returned result) as defined by the rules. One rule
+ * uniquely defines a vector.
  */
 
 /**
@@ -24,8 +25,7 @@ var ajv = require('ajv');
  *  addRule: addRule,
  *  removeRule: removeRule,
  *  update: update,
- *  setTraceOptions:
- *  setTraceOptions
+ *  setTraceOptions: setTraceOptions
  * }}
  */
 module.exports = function () {

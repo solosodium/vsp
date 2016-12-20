@@ -32,3 +32,15 @@ vsp.setTraceOptions({
     captureState: true
 });
 console.log(vsp.getTraceOptions());
+
+
+var Rule = require('./rule.js');
+
+var r = new Rule('a', 'b', 'sdf', 'sd', 's');
+
+console.log(r);
+
+r.vector = 'xx';
+r. condition = "asdsda";
+
+console.log(r);
