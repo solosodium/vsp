@@ -7,7 +7,7 @@
  */
 
 /**
- * Rule definition (immutable once defined)
+ * Rule definition (read-only once defined)
  * @constructor
  * @param {string} vector vector this rule is for
  * @param {string} condition condition expression to be evaluated
