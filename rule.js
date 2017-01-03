@@ -17,10 +17,10 @@
 function Rule () {
     // parse parameters (all read-only)
     var params = [
-        'vector',
-        'condition',
-        'execution',
-        'schema'
+        'vector',       // 0
+        'condition',    // 1
+        'execution',    // 2
+        'schema'        // 3
     ];
     for (var i=0; i<arguments.length; i++) {
         var param = '';
