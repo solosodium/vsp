@@ -3,18 +3,23 @@
  * Author: Hao Fu
  * Created date: 11/23/2016
  * Updated date: 12/20/2016
- * Description: This module maintains an internal STATE and a list of RULES.
+ * Description: This module maintains an internal STATE and a list of RULEs.
  * Once the state is initialized and rules are defined, it accepts incoming
- * VECTORS (events) that match the definition of the rules, and update the
- * state with both vectors and rules. During the update, the process also
- * generates PRODUCT (returned result) as defined by the rules. One rule
- * uniquely defines a vector.
+ * VECTORs (events) that match the definition of the rules, and updates the
+ * state. During the update, PRODUCT (returned result) is also generated as
+ * defined by the rules. One rule uniquely defines a vector.
  */
 
 /**
  * JSON schema parser dependency
  */
 var ajv = require('ajv');
+
+/**
+ * internal modules
+ */
+var message = require('./message.js')();
+var Rule = require('./rule.js');
 
 /**
  * Module definition

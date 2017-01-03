@@ -36,7 +36,7 @@ console.log(vsp.getTraceOptions());
 
 var Rule = require('./rule.js');
 
-var r = new Rule('a', 'b', 'sdf', 'sd', 's');
+var r = new Rule('a', 'b', 'sdf');
 
 console.log(r);
 
