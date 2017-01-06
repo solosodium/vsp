@@ -2,9 +2,11 @@
  * Name: rule.js
  * Author: Hao Fu
  * Created date: 12/20/2016
- * Updated date: 01/02/2017
+ * Updated date: 01/06/2017
  * Description: This module is the class definition of RULE
  */
+
+'use strict';
 
 /**
  * external modules
@@ -17,7 +19,7 @@ var Ajv = require('ajv');
 var message = require('./message.js')();
 
 /**
- * Rule definition (read-only once defined)
+ * Rule definition (immutable)
  * @constructor
  * @param {string} vector vector this rule is for
  * @param {string} condition condition expression to be evaluated
@@ -72,7 +74,7 @@ function Rule () {
             }
             // add value if it is valid
             if (value !== null) {
-                this.addReadonlyProperty(param, value);
+                this.addImmutableProperty(param, value);
             }
         }
     }
@@ -91,7 +93,7 @@ function Rule () {
     }
 
     // add a valid tag
-    this.addReadonlyProperty('valid', valid);
+    this.addImmutableProperty('valid', valid);
 
 }
 
@@ -155,11 +157,11 @@ Rule.prototype.parseSchema = function (schema) {
 };
 
 /**
- * Add read-only property to object
+ * Add immutable property to object
  * @param key
  * @param value
  */
-Rule.prototype.addReadonlyProperty = function (key, value) {
+Rule.prototype.addImmutableProperty = function (key, value) {
     // add a valid tag
     Object.defineProperty(this, key, {
         value: value,

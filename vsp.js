@@ -10,6 +10,8 @@
  * defined by the rules. One rule uniquely defines a vector.
  */
 
+'use strict';
+
 /**
  * JSON schema parser dependency
  */
