@@ -2,7 +2,18 @@
   "name": "vsp",
   "version": "0.0.1",
   "description": "vector, state, product",
+  "author": "solosodium",
   "dependencies": {
     "ajv": "^4.9.0"
-  }
+  },
+  "main": "vsp.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solosodium/vsp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/solosodium/vsp/issues"
+  },
+  "homepage": "https://github.com/solosodium/vsp#readme",
+  "license": "MIT"
 }

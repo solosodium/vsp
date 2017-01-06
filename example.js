@@ -27,16 +27,17 @@ console.log(vsp.getState());
 */
 
 // trace options test
+/*
 console.log(vsp.getTraceOptions());
 vsp.setTraceOptions({
     captureState: true
 });
 console.log(vsp.getTraceOptions());
-
+*/
 
 var Rule = require('./rule.js');
 
-var r = new Rule('a', 'b', 'sdf');
+var r = new Rule('a', 'b', 3);
 
 console.log(r);
 

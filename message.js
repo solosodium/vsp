@@ -13,7 +13,7 @@
 module.exports = function () {
 
     var prefixes = {
-        log: "[log ]",
+        log: "[log] ",
         warn: "[warning] ",
         error: "[error] "
     };

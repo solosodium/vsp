@@ -1,2 +1,4 @@
 # vsp
-A rule based state update library
+A (JSON schema enforced) rule based (single) state machine for JavaScript
+
+
