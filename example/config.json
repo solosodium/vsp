@@ -1,0 +1,65 @@
+{
+  "name": "example config file",
+  "description": "showcase the config file for a state and associated rules",
+  "state": {
+    "template": {
+      "keyA": "valueA",
+      "keyB": "valueB",
+      "keyC": "valueC"
+    },
+    "rules": [
+      {
+        "vector": "updateKeyA",
+        "condition": "true",
+        "execution": "state.keyA = vector.valueA;",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "valueA": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "valueA"
+          ]
+        }
+      },
+      {
+        "vector": "conditionalUpdateKeyB",
+        "condition": "state.keyB !== vector.valueB",
+        "execution": "state.keyB = vector.valueB;",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "valueB": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "valueB"
+          ]
+        }
+      },
+      {
+        "vector": "updateKeyCBasedOnKeyA",
+        "condition": "state.keyA === vector.valueA",
+        "execution": "state.keyC = vector.valueC;",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "valueA": {
+              "type": "string"
+            },
+            "valueC": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "valueA",
+            "valueC"
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 
-var vsp = require('./vsp.js')();
+var vsp = require('./../vsp.js')();
 
 var rule1 = {
     'vector': 'vector1',
@@ -35,7 +35,7 @@ vsp.setTraceOptions({
 console.log(vsp.getTraceOptions());
 */
 
-var Rule = require('./rule.js');
+var Rule = require('./../lib/rule.js');
 
 var r = new Rule('a', 'b', 3);
 

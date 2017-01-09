@@ -20,8 +20,8 @@ var ajv = require('ajv');
 /**
  * internal modules
  */
-var message = require('./message.js')();
-var Rule = require('./rule.js');
+var message = require('./lib/message.js')();
+var Rule = require('./lib/rule.js');
 
 /**
  * Module definition
