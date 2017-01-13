@@ -18,7 +18,8 @@ console.log(r);
 
 var State = require("../lib/state.js");
 
-var s = new State("hello");
-console.log(s);
-console.log(s.getState());
+var config = JSON.parse((require('fs')).readFileSync("../example/config.json"));
+console.log(config);
 
+var s = new State(config);
+console.log(s.getState());
