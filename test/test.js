@@ -1,25 +1,25 @@
 /**
- * test for Rule class
+ * Tests for Rule
  */
 
-/*
 var Rule = require("../lib/rule.js");
 
-var r = new Rule('a', 'b', 3);
-console.log(r);
-r.vector = 'xx';
-r. condition = "aa";
-console.log(r);
-*/
+//var r1 = new Rule();
+//var r2 = new Rule({});
+//var r3 = new Rule({'vector':'v', 'condition':'c', 'execution':'e'});
+//var r4 = new Rule({'vector':'v', 'condition':'c', 'execution':'e', 'schema':{'a':{}}});
 
 /**
- * test State class
+ * Tests for State
  */
 
 var State = require("../lib/state.js");
 
-var config = JSON.parse((require('fs')).readFileSync("../example/config.json"));
-console.log(config);
+//var s1 = new State();
+//var s2 = new State({});
+//var s3 = new State({'name':'n', 'description':'d'});
+//var s4 = new State({'name':'n', 'description':'d', 'state': {}});
+var s5 = new State({'name':'n', 'description':'d', 'state': {'template':{}, 'rules':[]}});
 
-var s = new State(config);
-console.log(s.getState());
+console.log(s5);
+
