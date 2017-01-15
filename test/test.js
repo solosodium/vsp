@@ -19,7 +19,11 @@ var State = require("../lib/state.js");
 //var s2 = new State({});
 //var s3 = new State({'name':'n', 'description':'d'});
 //var s4 = new State({'name':'n', 'description':'d', 'state': {}});
-var s5 = new State({'name':'n', 'description':'d', 'state': {'template':{}, 'rules':[]}});
+//console.log(s4);
+//var s5 = new State({'name':'n', 'description':'d', 'state': {'template':{}, 'rules':[]}});
+//s5.addRule({'vector':'v1', 'condition':'c', 'execution':'e'});
+//s5.addRule({'vector':'v2', 'condition':'c', 'execution':'e'});
+//s5.removeRule('v2');
+//console.log(s5.getRules());
 
-console.log(s5);
 
