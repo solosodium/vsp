@@ -11,7 +11,7 @@
 /**
  * internal modules
  */
-var message = require('./lib/message.js')();
+//var message = require('./lib/message.js')();
 var Rule = require('./lib/rule.js');
 var State = require('./lib/state.js');
 

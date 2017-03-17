@@ -2,9 +2,10 @@
   "name": "vsp",
   "version": "0.0.1",
   "description": "vector, state, product",
-  "author": "solosodium",
+  "author": "Hao Fu <fuhaoee@gmail.com>",
   "dependencies": {
-    "ajv": "^4.9.0"
+    "ajv": "^4.9.0",
+    "fs": "0.0.1-security"
   },
   "main": "vsp.js",
   "repository": {

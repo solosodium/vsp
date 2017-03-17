@@ -3,9 +3,9 @@
   "description": "showcase the config file for a state and associated rules",
   "state": {
     "template": {
-      "keyA": "valueA",
-      "keyB": "valueB",
-      "keyC": "valueC"
+      "keyA": false,
+      "keyB": false,
+      "keyC": false
     },
     "rules": [
       {
@@ -16,7 +16,7 @@
           "type": "object",
           "properties": {
             "valueA": {
-              "type": "string"
+              "type": "boolean"
             }
           },
           "required": [
@@ -32,7 +32,7 @@
           "type": "object",
           "properties": {
             "valueB": {
-              "type": "string"
+              "type": "boolean"
             }
           },
           "required": [
@@ -42,16 +42,16 @@
       },
       {
         "vector": "updateKeyCBasedOnKeyA",
-        "condition": "state.keyA === vector.valueA",
+        "condition": "state.keyA == vector.valueA",
         "execution": "state.keyC = vector.valueC;",
         "schema": {
           "type": "object",
           "properties": {
             "valueA": {
-              "type": "string"
+              "type": "boolean"
             },
             "valueC": {
-              "type": "string"
+              "type": "boolean"
             }
           },
           "required": [
